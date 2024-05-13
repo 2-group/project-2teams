@@ -10,9 +10,10 @@ function App() {
      <Header/>
       <Routes>
         <Route path='/about' element={<About/>}/>
+        
       </Routes>
     </BrowserRouter>
-    </div>
+    </div>        
   );
 }
 

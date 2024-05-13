@@ -7,18 +7,19 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
 import logo from '../components/assets/logo.jpg'
 import { Link } from 'react-router-dom'
-import style from '../components/styles/styles.moduls.css'
+
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid>
-        <Navbar.Brand as={Link} to='home'href="#">
+    
+    <Navbar style={{position:'fixed', backdropFilter: 'blur(200px)', borderRadius: '70px', fontSize:'20px'}} expand="lg" className="bg-body-tertiary">
+      <Container fluid >
+        <Navbar.Brand as={Link} to='/'href="#">
           <img style={{maxHeight: '150px', maxWidth: '150px'}} src={logo} alt="" />
           
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse style={{gap: '250px'}} id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
@@ -38,6 +39,9 @@ function Header() {
             </NavDropdown>
             <Nav.Link as={Link} to='turs'  href="#" >
               Горящие туры
+            </Nav.Link>
+            <Nav.Link as={Link} to='turs'  href="#" >
+              О нас
             </Nav.Link>
           </Nav>
 
