@@ -1,3 +1,104 @@
 {
+    "hotels":[
+        {
+            "id": 1,
+            "name":"SHERATON",
+            "street":"Бишкек, Sheraton Grand Bishkek 148B, Kievskaya Street",
+            "price": "от 13 990 руб.",
+            "numberFond": "183",
+            "feedback":"8.5/10",
+            "feedbackText":"Хорошо",
+            "howMuchFeedback": "23 оценок"
+        },
+        {
+            "id": 2,
+            "name": "Отель Hyatt Regency Bishkek",
+            "street":" Бишкек, Abdrahmanov Street 191",
+            "price": "от 11 857 руб.",
+            "numberFond": "178",
+            "feedback": "8.1/10",
+            "feedbackText": "Хорошо",
+            "howMuchFeedback": "30 оценок"
+        },
+        {
+            "id": 3,
+            "name": "Отель Golden Dragon",
+            "street": "Бишкек, Elebaev Street 60",
+            "price": "от 4 559 руб.",
+            "numberFond": "50",
+            "feedback": "9.3/10",
+            "feedbackText": "Отлично",
+            "howMuchFeedback": "110 оценок"
+        },
+        {
+            "id": 4,
+            "name": "Отель Damas International",
+            "street": " Бишкек, Zhumabek Street 107",
+            "price": "от 5 926 руб.",
+            "numberFond": "99",
+            "feedback": "8.7/10",
+            "feedbackText": "Хорошо"
+        },
+        {
+            "id": 5,
+            "name": "Отель Orion Bishkek", 
+            "street": "Бишкек, Erkindik Boulevard 21",
+            "price": "от 13 175 руб.",
+            "numberFond": "84",
+            "feedback": "9.3/10",
+            "feedbackText": "Великолепно",
+            "howMuchFeedback": "102 оценок"
+        },
+        {
+            "id": 6,
+            "name": "Отель Plaza Bishkek",
+            "street":" Бишкек, Улица Тоголок Молдо 52",
+            "price": "от 5 580 руб.",
+            "numberFond": "65",
+            "feedback": "9.8/10",
+            "feedbackText":"Великолепно",
+            "howMuchFeedback":"347 оценок"
+        },
+        {
+            "id": 7, 
+            "name": "Отель Rich",
+            "street": "Бишкек, Улица Тимирязева 111",
+            "price": "от 2 735 руб.",
+            "numberFond":"70",
+            "feedback": "9.3/10",
+            "feedbackText":"Отлично",
+            "howMuchFeedback":"77 оценок"
+        },
+        {
+            "id": 8,
+            "name": "Отель Бишкек",
+            "street": "Бишкек, Улица Орозбекова 87",
+            "price": "от 10 668 руб.",
+            "numberFond":"67",
+            "feedback":"9.3/10",
+            "feedbackText":"Отлично",
+            "howMuchFeedback":"70 оценок"
+        },
+        {
+            "id": 9,
+            "name": "Garden Hotel & SPA",
+            "street":" Бишкек, Южная Магистраль пересекает ул. Баха. Эмилбека Айлчиева 61",
+            "price":"от 4 559 руб.",
+            "numberFond":"85",
+            "feedback":"9.1/10",
+            "feedbackText":"Отлично",
+            "howMuchFeedback": "403 оценки"
+        },
+        {
+            "id": 10,
+            "name":"Отель Golden Tulip Bishkek",
+            "street":"Бишкек, 37 Isanov Street",
+            "price":"от 7 294 руб.",
+            "numberFond":"65",
+            "feedback": "8.7/10",
+            "feedbackText":"Хорошо",
+            "howMuchFeedback":"85 оценок"
+        }
+    ]
     
 }

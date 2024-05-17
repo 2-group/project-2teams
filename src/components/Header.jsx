@@ -12,11 +12,10 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     
-    <Navbar style={{position:'fixed', backdropFilter: 'blur(200px)', borderRadius: '70px', fontSize:'20px'}} expand="lg" className="bg-body-tertiary">
+    <Navbar style={{position:'fixed', top: "0px", zIndex: "20", backdropFilter: 'blur(200px)', borderRadius: '70px', fontSize:'20px',  width: "100%", height: "150px"}} expand="lg" className="bg-body-tertiary">
       <Container fluid >
-        <Navbar.Brand as={Link} to='/'href="#">
-          <img style={{maxHeight: '150px', maxWidth: '150px'}} src={logo} alt="" />
-          
+        <Navbar.Brand as={Link} to='/'>
+          <img style={{maxHeight: '150px', maxWidth: '150px', borderRadius: "50px"}} src={logo} alt="" />
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse style={{gap: '250px'}} id="navbarScroll">
@@ -25,23 +24,20 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link as={Link} to='about' href="Что вас ждет">Что вас ждет</Nav.Link>
-            <Nav.Link as={Link} to='contacts' href="contacts">Контакты</Nav.Link>
+            <Nav.Link as={Link} to='about'>O нас</Nav.Link>
+            <Nav.Link as={Link} to='contacts'>Контакты</Nav.Link>
             <NavDropdown style={{color:'grey'}} title="Поездка" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to='https://beket.kg/?ysclid=lvj2qkk66w314817953' href="tickets">Билеты</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='https://beket.kg/?ysclid=lvj2qkk66w314817953'>Билеты</NavDropdown.Item>
               <NavDropdown.Item as={Link} to='https://101hotels.com/kyrgyzstan/bishkek/best?ysclid=lvj2kqgz9i953328585' href="hotels">
                 Отели
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item to='https://experience.tripster.ru/destinations/kyrgyzstan/' as={Link} href="excursions">
+              <NavDropdown.Item to='https://experience.tripster.ru/destinations/kyrgyzstan/' as={Link}>
                 Экскурсии
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to='turs'  href="#" >
+            <Nav.Link as={Link} to='turs'>
               Горящие туры
-            </Nav.Link>
-            <Nav.Link as={Link} to='turs'  href="#" >
-              О нас
             </Nav.Link>
           </Nav>
 

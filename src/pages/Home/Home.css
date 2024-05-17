@@ -1,0 +1,12 @@
+.title{
+    animation: title 5s linear  5s infinite alternate;
+}
+@keyframes title {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;}
+  }
+  .text{
+    font-size: 18px;
+  }
