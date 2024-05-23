@@ -12,10 +12,10 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     
-    <Navbar style={{position:'fixed', top: "0px", zIndex: "20", backdropFilter: 'blur(200px)', borderRadius: '70px', fontSize:'20px',  width: "100%", height: "150px"}} expand="lg" className="bg-body-tertiary">
+    <Navbar style={{position:'fixed', top: "0px", zIndex: "20",  borderRadius: '70px', fontSize:'20px',  width: "100%", height: "150px"}} expand="lg" className="bg-body-tertiary">
       <Container fluid >
         <Navbar.Brand as={Link} to='/'>
-          <img style={{maxHeight: '150px', maxWidth: '150px', borderRadius: "50px"}} src={logo} alt="" />
+          <img style={{maxHeight: '100px', maxWidth: '100px', borderRadius: "50px"}} src={logo} alt="" />
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse style={{gap: '250px'}} id="navbarScroll">
@@ -28,7 +28,7 @@ function Header() {
             <Nav.Link as={Link} to='contacts'>Контакты</Nav.Link>
             <NavDropdown style={{color:'grey'}} title="Поездка" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to='https://beket.kg/?ysclid=lvj2qkk66w314817953'>Билеты</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='https://101hotels.com/kyrgyzstan/bishkek/best?ysclid=lvj2kqgz9i953328585' href="hotels">
+              <NavDropdown.Item as={Link} to='https://101hotels.com/kyrgyzstan/bishkek/best?ysclid=lvj2kqgz9i953328585' href="#">
                 Отели
               </NavDropdown.Item>
               <NavDropdown.Divider />
