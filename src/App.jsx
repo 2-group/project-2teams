@@ -9,8 +9,17 @@ import Home from './pages/Home/Home'
 function App() {
   return (
     <div className="App">
-      <h1>hello, world</h1>
-    </div>
+
+      <BrowserRouter>
+     <Header/>
+      <Routes>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/turs' element={<Turs/>}/>
+        <Route exact path='/' element={<Home/>}/>
+        <Route path='contacts' element={<Contacts/>}/>
+      </Routes>
+    </BrowserRouter>
+    </div>        
   );
 }
 
