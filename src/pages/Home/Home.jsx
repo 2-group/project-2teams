@@ -43,11 +43,11 @@ function Home() {
   const [currencies, setCurrencies] = useState([]);
   const [amount, setAmount] = useState(1);
   const [fromCurrency, setFromCurrency] = useState("USD");
-  const [toCurrency, setToCurrency] = useState("INR");
+  const [toCurrency, setToCurrency] = useState("KGS");
   const [convertedAmount, setConvertedAmount] = useState(null);
   const [converting, setConverting] = useState(false);
   const [favorites, setFavorites] = useState(
-    JSON.parse(localStorage.getItem("favorites")) || ["INR", "EUR"]
+    JSON.parse(localStorage.getItem("favorites")) || ["KGS", "EUR"]
   );
 
   const fetchCurrencies = async () => {
