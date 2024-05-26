@@ -14,12 +14,13 @@
     "bootstrap": "^5.3.3",
     "cheerio": "^1.0.0-rc.12",
     "framer-motion": "^11.2.5",
-    "mdb-react-ui-kit": "^8.0.0",
+    "json-server": "^1.0.0-beta.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-dropdown-select": "^4.11.2",
     "react-icons": "^5.2.1",
+    "react-map-gl": "^7.1.7",
     "react-router-dom": "^6.23.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -28,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "json-server --watch db.json --port 3002"
   },
   "eslintConfig": {
     "extends": [
