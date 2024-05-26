@@ -1,0 +1,17 @@
+.container1{
+    margin-top: 10rem;
+    margin-right: 70rem;
+}
+.imgg{
+    width: 100%;
+    border-radius: 25px;
+}
+.flex-cards{
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
+}
+.card{
+    margin-top: 20px;
+}

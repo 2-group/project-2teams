@@ -1,0 +1,26 @@
+.container1-flex{
+    padding-top: 8rem;
+    display: flex;
+}
+.About{
+    background-color: rgb(240, 237, 237);
+}
+.img{
+    border-radius: 25px;
+}
+.btns{
+   border-radius: 10px;
+   background-color: rgb(195, 195, 226); 
+   border: 1px solid rgb(195, 195, 226);
+   padding: 10px;
+   color: rgb(27, 27, 103);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btns:hover{
+    background-color: rgb(131, 131, 175);
+}
+.button-flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

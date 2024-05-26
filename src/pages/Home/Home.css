@@ -57,6 +57,7 @@
   padding-top: 2rem;
   border: 2px solid rgb(30, 30, 131);
   border-radius: 20px;
+  background-color: white;
 }
 
 .svg{
@@ -107,23 +108,16 @@ input {
     border-radius: 50%;
     cursor: pointer;
 }
- 
+.Home{
+  background-color: rgb(240, 237, 237);
+}
 .result {
     box-sizing: border-box;
     width: 800px;
     padding-left: 30px;
 }
  
-button {
-    width: 100px;
-    height: 30px;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 15px;
-    border: 2px solid forestgreen;
-    background-color: rgb(226, 252, 184);
-    cursor: pointer;
-}
+
   @media (max-width: 971px){
     section{
       padding-left: 2rem;

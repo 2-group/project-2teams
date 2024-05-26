@@ -28,7 +28,7 @@ function Header() {
             <Nav.Link as={Link} to='contacts'>Контакты</Nav.Link>
             <NavDropdown style={{color:'grey'}} title="Поездка" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to='https://beket.kg/?ysclid=lvj2qkk66w314817953'>Билеты</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='https://101hotels.com/kyrgyzstan/bishkek/best?ysclid=lvj2kqgz9i953328585' href="#">
+              <NavDropdown.Item as={Link} to='hotels' href="hotels">
                 Отели
               </NavDropdown.Item>
               <NavDropdown.Divider />
