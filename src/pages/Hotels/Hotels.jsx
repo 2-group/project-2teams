@@ -1,33 +1,30 @@
 import React from 'react';
 import '../Hotels/Hotels.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import lovers from '../../components/assets/lovers.jpg'
 import Card from 'react-bootstrap/Card';
-import rich from '../../components/assets/rich.jpg';
-import sheraton from '../../components/assets/sheraton.jpg';
-import resident from '../../components/assets/resident.jpg';
-import orion from '../../components/assets/orion.jpg';
-import plaza from '../../components/assets/plaza.jpg';
-import parkHotel from '../../components/assets/park-hotel.jpg';
-import jannat from '../../components/assets/jannat.jpg';
-import hyatt from '../../components/assets/hyatt.jpg';
-import goldenDragon from '../../components/assets/golden-dragon.jpg';
-import goldenTulip from '../../components/assets/golden-tulip.jpg';
-import damas from '../../components/assets/damas.jpg';
-import garden from '../../components/assets/garden.jpg';
+import {hotels} from '../../db.js'
 import svg from '../../components/assets/location-pin.svg'
+import stars4 from '../../components/assets/4stars.svg'
+import Table from 'react-bootstrap/Table';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 function Hotels(){
-    const [show, setShow] = useState(false);
+  
+  //search
 
+  const [search, setSearch] = useState('');
+    const [show, setShow] = useState(false);
+//advertisment
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return(
         <div className="Hotels">
-            <section>
-                <div className="container1">
+          <div className="container1">
                 <Button  variant="primary" onClick={handleShow}>
         Нажми на меня!
       </Button>
@@ -47,152 +44,48 @@ function Hotels(){
       </Offcanvas>
 
                 </div>
-            </section>
             <section>
-                <div className="container">
-                    <div className="flex-cards">
-                        <div className="cards">
-                        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={rich} />
+            <Container>
+        <h1 className='title'>Hotels</h1>
+        <Form>
+          <InputGroup>
+
+            
+            <Form.Control
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder='Search names'
+            />
+          </InputGroup>
+        </Form>
+        <Table striped bordered hover>
+          <tbody className='flex-cards'>
+            {hotels.filter((item) => {
+                return search.toLowerCase() === ' '
+                  ? item
+                  : item.name.toLowerCase().includes(search);
+              }).map((item, index) => (
+                <Card key={index} style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={item.img} alt="" />
         <Card.Body>
-          <Card.Title>Отель "Rich"</Card.Title>
+          <Card.Title>{item.name}</Card.Title>
           <Card.Text>
-            <img src={svg} alt="" className="svg" />
+            <div className="street">
+            <img src={svg} className="svg" /><p>{item.street}</p>
+            </div>
+            <div className="flex-rating">
+            <img className='svg-rating' src={stars4} alt="" /><div className="center">{item.feedback}<p>{item.feedbackText}</p></div>
+            </div>
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <h4 className='text-hotel'><strong>{item.price}</strong></h4>
+          <Button variant="primary">Забронировать</Button>
         </Card.Body>
       </Card>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-                        </div>
-                        <div className="cards">
-                        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-                        </div>
-                        <div className="cards">
-                        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-                        </div>
-                        <div className="cards">
-                        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-                        </div>
-                    </div>
-                </div>
+              ))}
+          </tbody>
+        </Table>
+      </Container>
             </section>
+            
         </div>
     )
 }

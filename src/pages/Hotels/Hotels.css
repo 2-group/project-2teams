@@ -1,17 +1,39 @@
 .container1{
     margin-top: 10rem;
-    margin-right: 70rem;
+    
 }
 .imgg{
     width: 100%;
     border-radius: 25px;
 }
 .flex-cards{
+    margin-top: 2rem;
     display: flex;
-    flex-direction: column;
-    flex-direction: row;
-    gap: 20px;
+    justify-content: center;
+    gap: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(30, 140, 150);
+    padding-bottom: 20px;
+    border-radius: 20px;
 }
 .card{
     margin-top: 20px;
+}
+.svg-rating{
+    width: 30%;
+}
+.street{
+    display: flex;
+}
+.flex-rating{
+    display: flex;
+    gap: 20px;
+}
+.center{
+    padding-top: 30px;
+    border-bottom: 3px solid blue;
+    font-weight: 600;
+    font-size: 18px;
 }

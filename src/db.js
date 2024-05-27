@@ -1,11 +1,10 @@
-{
-    "hotels":[
+export const hotels = [
         {
             "id": 1,
             "name":"SHERATON",
             "street":"Бишкек, Sheraton Grand Bishkek 148B, Kievskaya Street",
             "price": "от 13 990 руб.",
-            "img": "https://s.101hotelscdn.ru/uploads/image/hotel_image/516322/1491913_preview.jpg",
+            "img": "https://btemir.kg/wp-content/uploads/2022/10/metallokonstrukcii-sheraton.jpg",
             "numberFond": "183",
             "feedback":"8.5/10",
             "feedbackText":"Хорошо",
@@ -38,7 +37,7 @@
             "name": "Отель Damas International",
             "street": " Бишкек, Zhumabek Street 107",
             "price": "от 5 926 руб.",
-            "img": "https://s.101hotelscdn.ru/uploads/image/hotel_image/25987/1489864_preview.jpg",
+            "img": "https://img.itinari.com/activity/images/original/3d5d1277-473e-4813-80a6-fb51eafca263-13173018_475998579260069_4109921123264854970_o.jpg?ch=DPR&dpr=1&w=1200&h=800&s=c1ee1d15ebfffc6980fda371d840edcc",
             "numberFond": "99",
             "feedback": "8.7/10",
             "feedbackText": "Хорошо"
@@ -133,4 +132,3 @@
         }
     ]
     
-}

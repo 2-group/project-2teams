@@ -5,10 +5,9 @@ import jigit from '../../components/assets/jigit.jpeg';
 import mountains from '../../components/assets/mountins.jpeg'
 import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import karakol from '../../components/assets/karakol.jpg';
-import sonkol from '../../components/assets/son-kol.jpg';
-import pikLenina from '../../components/assets/Pik-Lenina.webp';
+import suleimanToo from '../../components/assets/suleiman-too.jpg';
+import ik from '../../components/assets/ik.jpg'
 import arslanbob from '../../components/assets/arslanbob.jpg'
 import svg1 from '../../components/assets/tea.svg';
 import svg2 from '../../components/assets/building.svg';
@@ -148,70 +147,180 @@ function Home() {
     <br />
     <br />
     <br />
+    
     <section>
-      <h1 className="title">Идеи для отдыха</h1>
-      <div className="flex-card" style={{display: 'flex', justifyContent: "space-around", gap: "10px"}}>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={arslanbob} />
-      <Card.Body>
-        <Card.Title>Ореховый лес "Арсланбаб"</Card.Title>
-        <Card.Text className='text'>
-        Арсланбоб — это ореховый лес, возникший в далекой древности, который состовляет 3000 лет.
-        <p className='text2'>Цена за человека: 300$</p>
-        <p className='text2'>В стоимость входит:</p>
-        <p className='text'><img className='svg' src={svg1} alt="" />Питание</p>
-        <p className='text'><img className='svg' src={svg2} alt="" />Отель</p>
-        <p className='text'><img className='svg' src={svg3} alt="" />Транспорт</p>
-        </Card.Text>
-        <Button variant="primary" style={{backgroundColor:"rgb(30, 30, 131"}}>Забронировать</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem'}}>
-      <Card.Img variant="top" src={pikLenina} />
-      <Card.Body>
-        <Card.Title>Пик Ленина</Card.Title>
-        <Card.Text className='text'>
-        Пик Ленина – это наивысшая точка Заалайского хребта, протяженность которого около 150 километров, а средняя высота на значительном протяжении превышает 6000 метров.
-        </Card.Text>
-        <p className='text2'>Цена за человека: 400$</p>
-        <p className='text2'>В стоимость входит:</p>
-        <p className='text'><img className='svg' src={svg1} alt="" />Питание</p>
-        <p className='text'><img className='svg' src={svg3} alt="" />Транспорт</p>
-        <p className='text'><img className='svg' src={svg4} alt="" />Специальный костюм</p>
-        <Button variant="primary" style={{backgroundColor:"rgb(30, 30, 131"}}>Забронировать</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={sonkol} />
-      <Card.Body>
-        <Card.Title>Озеро "Сон-куль"</Card.Title>
-        <Card.Text className='text'>
-          Озеро Сон-Кель, жемчужина среди кыргызских гор, является местом невероятной красоты и спокойствия. Вознесенное на высоте более трех тысяч метров, оно предлагает посетителям уникальное сочетание природного великолепия и глубокой истории.
-        </Card.Text>
-        <p className='text2'>Цена за человека: 100$</p>
-        <p className='text2'>В стоимость входит:</p>
-        <p className='text'><img className='svg' src={svg1} alt="" />Питание</p>
-        <p className='text'><img className='svg' src={svg3} alt="" />Транспорт</p>
-        <Button variant="primary" style={{backgroundColor:"rgb(30, 30, 131"}}>Забронировать</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={karakol} />
-      <Card.Body>
-        <Card.Title>Горнолыжная База "Каракол"</Card.Title>
-        <Card.Text className='text'>
-        Горнолыжный курорт Каракол в Кыргызстане - это уникальное место, сочетающее в себе природную красоту и отличные условия для катания. 
-        </Card.Text>
-        <p className='text2'>Цена за человека: 300$</p>
-        <p className='text2'>В стоимость входит:</p>
-        <p className='text'><img className='svg' src={svg1} alt="" />Питание</p>
-        <p className='text'><img className='svg' src={svg2} alt="" />Отель</p>
-        <p className='text'><img className='svg' src={svg3} alt="" />Транспорт</p>
-        <Button variant="primary" style={{backgroundColor:"rgb(30, 30, 131"}}>Забронировать</Button>
-      </Card.Body>
-    </Card>
-      </div>
-    </section>
+        <h1 className="title">Идеи для отдыха</h1>
+          <section className="card-area">
+            <section classNameName="card-section">
+              <div className="card">
+                <div className="flip-card">
+                  <div className="flip-card__container">
+                    <div className="card-front">
+                      <div className="card-front__tp card-front__tp--city">
+                        
+
+                        <h2 className="card-front__heading">
+                          Городские приключения
+                        </h2>
+                        <p className="card-front__text-price">
+                          От 100$
+                        </p>
+                    </div>
+
+                    <div className="card-front__bt">
+                        <p className="card-front__text-view card-front__text-view--city">
+                            Посмотри меня
+                        </p>
+                    </div>
+                </div>
+                <div className="card-back">
+                    <img src={suleimanToo} alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div className="inside-page">
+            <div className="inside-page__container">
+                <h3 className="inside-page__heading inside-page__heading--city">
+                    Сулейман-Too
+                </h3>
+                <p className="inside-page__text ">
+                   Не пропусти тур в город Ош, а отправляемся мы в гору Сулейман Тоо
+                </p>
+                <a href="#" className="inside-page__btn inside-page__btn--city">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="card-section">
+    <div class="card">
+        <div class="flip-card">
+            <div class="flip-card__container">
+                <div class="card-front">
+                    <div class="card-front__tp card-front__tp--ski">
+                         <h2 class="card-front__heading">
+                            Лыжние приключения
+                         </h2>
+                           <p class="card-front__text-price">
+                              От 500$
+                           </p>
+                    </div>
+
+                    <div class="card-front__bt">
+                        <p class="card-front__text-view card-front__text-view--ski">
+                            Посмотри меня
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-back">
+                    <img src={karakol} alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="inside-page">
+            <div class="inside-page__container">
+                <h3 class="inside-page__heading inside-page__heading--ski">
+                    Каракол 
+                </h3>
+                <p class="inside-page__text">
+                   Любишь лыжи? Тогда отправляйся на 3 дня в снежный Каракол
+                </p>
+                <a href="#" class="inside-page__btn inside-page__btn--ski">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card-section">
+    <div class="card">
+        <div class="flip-card">
+            <div class="flip-card__container">
+                <div class="card-front">
+                    <div class="card-front__tp card-front__tp--beach">
+                        
+                   
+                                   <h2 class="card-front__heading">
+                                       Пляжные приключения
+                                   </h2>
+                                   <p class="card-front__text-price">
+                                       От 560$
+                                   </p>
+                    </div>
+
+                    <div class="card-front__bt">
+                        <p class="card-front__text-view card-front__text-view--beach">
+                            Посмотри меня
+                        </p>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <img src={ik} alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="inside-page">
+            <div class="inside-page__container">
+                <h3 class="inside-page__heading inside-page__heading--beach">
+                    Иссык-Куль
+                </h3>
+                <p class="inside-page__text">
+                   Ура лето! Время для отдыха на кайфовом пляже Иссык-Куля.
+                </p>
+                <a href="#" class="inside-page__btn inside-page__btn--beach">Посмотри меня</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card-section">
+    <div class="card">
+        <div class="flip-card">
+            <div class="flip-card__container">
+                <div class="card-front">
+                    <div class="card-front__tp card-front__tp--camping">
+                        
+                                   <h2 class="card-front__heading">
+                                       Кэмпинг приключения
+                                   </h2>
+                                   <p class="card-front__text-price">
+                                       От 200$
+                                   </p>
+                    </div>
+
+                    <div class="card-front__bt">
+                        <p class="card-front__text-view card-front__text-view--camping">
+                            Посмотри меня
+                        </p>
+                    </div>
+                </div>
+                <div class="card-back">
+                  <img src={arslanbob} alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="inside-page">
+            <div class="inside-page__container">
+                <h3 class="inside-page__heading inside-page__heading--camping">
+                    Арсланбоб
+                </h3>
+                <p class="inside-page__text">
+                   Чудесный, древний и ореховый лес- Арсланбоб!
+                </p>
+                <a href="#" class="inside-page__btn inside-page__btn--camping">Посмотри меня</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+</section>
+    
     <section>
         <div className="container">
         <h1 className="title1">Наша природа вас обязательно удивит</h1>
@@ -220,7 +329,7 @@ function Home() {
               <img src={img3} alt="" className="image" />
                 <div class="middle">
                   <h4 className="title1">Чатыр-Куль</h4>
-                  <p className="text">Озеро Чатыр-Куль расположено между хребтами Ат-Баши<br /> и Торугарт-Тоо на высоте 3530 м. Находясь высоко в горах,<br /> озеро оправдывает свое название – «небесное озеро».</p>
+                  <p className="text">Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. Находясь высоко в горах, озеро оправдывает свое название – «небесное озеро».</p>
                   <Button variant="primary" style={{backgroundColor:"rgb(30, 30, 131"}}>Подробнее</Button>
                 </div>
             </div>
@@ -228,7 +337,7 @@ function Home() {
               <img src={img2} alt="" className="image" />
                 <div class="middle">
                 <h4 className="title1">Предгорье Ала-Тоо</h4>
-                  <p className="text">Кыргызстан славится маковыми полями, в том <br /> числе расположенными совсем рядом со столицей. <br /> Обычно маки расцветают в мае. Земли в предгорьях Ала-Тоо <br />окрашиваются в ярко-красный цвет.</p>
+                  <p className="text">Кыргызстан славится маковыми полями, в том <br /> числе расположенными совсем рядом со столицей. <br /> Обычно маки расцветают в мае. Земли в предгорьях Ала-Тоо окрашиваются в ярко-красный цвет.</p>
                   <Button variant="primary" style={{backgroundColor:"rgb(30, 30, 131"}}>Подробнее</Button>
                 </div>
             </div>
@@ -364,25 +473,25 @@ function Home() {
             </div>
             <div className="first-list">
             <div className="list-title">Туристам</div>
-              <a className='a' href="#">Новости</a>
-              <a className='a' href="#">Наши Контакты</a>
-              <a className='a' href="#">О нас</a>
-              <a className='a' href="#">Отзывы</a>
+              <a className='a text' href="#">Новости</a>
+              <a className='a text' href="#">Наши Контакты</a>
+              <a className='a text' href="#">О нас</a>
+              <a className='a text' href="#">Отзывы</a>
             </div>
             <div className="second-list">
             <div className="list-title">Агенствам</div>
-              <a className='a' href="#">Сотруднечество</a>
-              <a className='a' href="#">Выдача документов</a>
-              <a className='a' href="#">Вопросы и ответы</a>
-              <a className='a' href="#">Нам пишут</a>
+              <a className='a text' href="#">Сотруднечество</a>
+              <a className='a text' href="#">Выдача документов</a>
+              <a className='a text' href="#">Вопросы и ответы</a>
+              <a className='a text' href="#">Нам пишут</a>
             </div>
             <div className="third-list">
             <div className="list-title">О компании</div>
-              <a className='a' href="#">О нас</a>
-              <a className='a' href="#">Контакты</a>
-              <a className='a' href="#">Наши партнеры</a>
-              <a className='a' href="#">Вакансии</a>
-              <a className='a' href="#">Новостной центр</a>
+              <a className='a text' href="#">О нас</a>
+              <a className='a text' href="#">Контакты</a>
+              <a className='a text' href="#">Наши партнеры</a>
+              <a className='a text' href="#">Вакансии</a>
+              <a className='a text' href="#">Новостной центр</a>
             </div>
             <div className="container-currency">
             <div className="list-title">Курсы Валют</div>

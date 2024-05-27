@@ -4,9 +4,10 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import React from 'react';
 import logo from '../components/assets/logo.jpg'
 import { Link } from 'react-router-dom'
+import '../components/Search/SearchList';
+import React from 'react';
 
 
 function Header() {
@@ -43,15 +44,18 @@ function Header() {
 
 
 
+          <Link to='search'>
           <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Куда хотите отправиться?"
               className="me-1"
               aria-label="Search"
+              
             />
-            <Button variant="outline-success">Поиск</Button>
-          </Form>
+            
+            <Button  variant="outline-success">Поиск</Button>
+          </Form></Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
