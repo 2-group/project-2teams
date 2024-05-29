@@ -28,12 +28,12 @@ function Header() {
             <Nav.Link as={Link} to='about'>O нас</Nav.Link>
             <Nav.Link as={Link} to='contacts'>Контакты</Nav.Link>
             <NavDropdown style={{color:'grey'}} title="Поездка" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to='https://beket.kg/?ysclid=lvj2qkk66w314817953'>Билеты</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='hotels' href="hotels">
+              <NavDropdown.Item style={{fontSize:"20px"}}  as={Link} to='https://beket.kg/?ysclid=lvj2qkk66w314817953'>Билеты</NavDropdown.Item>
+              <NavDropdown.Item style={{fontSize:"20px"}}  as={Link} to='hotels' href="hotels">
                 Отели
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item to='https://experience.tripster.ru/destinations/kyrgyzstan/' as={Link}>
+              <NavDropdown.Item style={{fontSize:"20px"}}  to='/excursion' as={Link}>
                 Экскурсии
               </NavDropdown.Item>
             </NavDropdown>
@@ -44,9 +44,9 @@ function Header() {
 
 
 
-          <Link to='search'>
-          <Form className="d-flex">
-            <Form.Control
+          <Link style={{textDecoration: "none"}} to='search'>
+          <Form  className="d-flex">
+            <Form.Control style={{fontSize:"18px"}}
               type="search"
               placeholder="Куда хотите отправиться?"
               className="me-1"
@@ -54,7 +54,7 @@ function Header() {
               
             />
             
-            <Button  variant="outline-success">Поиск</Button>
+            <Button style={{fontSize:"18px"}} variant="outline-success">Поиск</Button>
           </Form></Link>
         </Navbar.Collapse>
       </Container>

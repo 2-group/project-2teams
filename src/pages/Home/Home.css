@@ -1,4 +1,6 @@
-
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .title{
     animation: title 5s linear  5s infinite alternate;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -15,7 +17,7 @@
     100% {color: green;}
   }
   .text{
-    font-size: 14px;
+    font-size: 12px;
   }
   .text2{
     font-size: 18px;
@@ -82,6 +84,7 @@
   }
   .list-title{
     font-weight: 800;
+    font-size: 20px;
   }
 
  .currency{
@@ -92,7 +95,8 @@
   display: flex;
   justify-content: center;
   gap: 50px;
-  
+  padding-top: 20px;
+  padding-bottom: 20px;
  }
  footer{
   padding-left: 2rem;
@@ -100,9 +104,7 @@
   
   
  }
- .img-f{
-  padding-top: 40px;
- }
+
  .first-list{
   display: flex;
   flex-direction: column;
@@ -120,8 +122,9 @@
   text-decoration: none;
  }
  .a{
-  color: rgb(0, 40, 125);
+  color: rgb(19, 20, 75);
   text-decoration: none;
+  font-size: 18px;
  }
  .a:hover{
   text-decoration: underline;

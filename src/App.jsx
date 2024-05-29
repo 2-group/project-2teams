@@ -7,7 +7,7 @@ import Turs from './pages/Turs';
 import Contacts from './pages/Contacts';
 import Home from './pages/Home/Home'
 import Hotels from './pages/Hotels/Hotels';
-
+import Excursion from './pages/Excursion/Excursion.jsx'
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
         <Route exact path='/' element={<Home/>}/>
         <Route path='/contacts' element={<Contacts/>}/>
         <Route path='/hotels' element={<Hotels/>}/>
+        <Route path='/excursion' element={<Excursion/>}/>
       </Routes>
     </BrowserRouter>
     

@@ -54,6 +54,7 @@ function Hotels(){
             <Form.Control
               onChange={(e) => setSearch(e.target.value)}
               placeholder='Search names'
+              style={{fontSize:"14px"}}
             />
           </InputGroup>
         </Form>
@@ -62,22 +63,22 @@ function Hotels(){
             {hotels.filter((item) => {
                 return search.toLowerCase() === ' '
                   ? item
-                  : item.name.toLowerCase().includes(search);
+                  : item.name.toLowerCase().includes(search), item.price.toLowerCase().includes(search), item.feedback.toLowerCase().includes(search);
               }).map((item, index) => (
-                <Card key={index} style={{ width: '18rem' }}>
+                <Card key={index} style={{ width: '24rem' }}>
         <Card.Img variant="top" src={item.img} alt="" />
         <Card.Body>
-          <Card.Title>{item.name}</Card.Title>
+          <Card.Title style={{fontSize:"20px", fontWeight:"600"}}>{item.name}</Card.Title>
           <Card.Text>
             <div className="street">
-            <img src={svg} className="svg" /><p>{item.street}</p>
+            <img src={svg} className="svg" /><p style={{fontSize:"14px"}}>{item.street}</p>
             </div>
             <div className="flex-rating">
             <img className='svg-rating' src={stars4} alt="" /><div className="center">{item.feedback}<p>{item.feedbackText}</p></div>
             </div>
           </Card.Text>
-          <h4 className='text-hotel'><strong>{item.price}</strong></h4>
-          <Button variant="primary">Забронировать</Button>
+          <h3 style={{color:"rgb(231, 204, 25"}}><strong>{item.price}</strong></h3>
+          <Button style={{fontSize:"16px"}} variant="primary">Забронировать</Button>
         </Card.Body>
       </Card>
               ))}

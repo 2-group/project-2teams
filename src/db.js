@@ -132,3 +132,185 @@ export const hotels = [
         }
     ]
     
+export const excursions = [
+    {
+        "id": 1,
+        "title": "Государственный исторический музей",
+        "city":"Бишкек",
+        "img":"https://i.pinimg.com/originals/b7/97/7a/b7977ae85b9c3e99c7a198ddb9da975d.jpg",
+        "street":"Улица проспект Чуй 203А",
+        "price": "300сом",
+        "feedback": "8.5/10"
+    },
+    {
+        "id": 2,
+        "title": "Парк им. Панфилова",
+        "city":"Бишкек",
+        "img":"https://pp.userapi.com/c840322/v840322828/6e353/qLB6_n2mHLY.jpg",
+        "street":"Улица Панфилова, перес. Фрунзе",
+        "price": "400сом",
+        "feedback": "8.8/10"
+    },
+    {
+        "id": 3,
+        "title": "Джержинка",
+        "city":"Бишкек",
+        "img":"https://sputnik.kg/img/104604/19/1046041968_288:0:3017:2047_1920x0_80_0_0_097cebd72344affdc519a377592cd1f4.jpg",
+        "street":"Улица Бульвар Эркиндик",
+        "price": "200сом",
+        "feedback": "7.9/10"
+    },
+    {
+        "id": 4,
+        "title": "Музей Сулейман-Тоо",
+        "city":"Ош",
+        "img":"https://i.imgur.com/Lucu1Y5.jpg",
+        "street":"Гапара Айтиева, 71/2",
+        "price": "500сом",
+        "feedback": "9/10"
+    },
+    {
+        "id": 5,
+        "title": "Церковь архистратига архангела Михаила",
+        "city":"Ош",
+        "img":"https://avatars.mds.yandex.net/get-altay/11924971/2a0000018f393d3c0b2e87d3e4668fdb57b7/L",
+        "street":"ул. Курманжан датки, 219, Ош",
+        "price": "200сом",
+        "feedback": "7.8/10"
+    },
+    {
+        "id": 6,
+        "title": "Театр Опера и Балета им. Малдыбаевева",
+        "city":"Бишкек",
+        "img":"https://data.kaktus.media/image/big/2017-10-23_12-12-02_936646.jpg",
+        "street":"Улица Юсупа Абдрахманова, 167",
+        "price": "1000сом",
+        "feedback": "9.7/10"
+    },
+    {
+        "id": 7,
+        "title": "Парк Ынтымак",
+        "city": "Бишкек",
+        "img":"https://avatars.mds.yandex.net/i?id=69514463ee2150dd806b3b0b790c218a8b9f082f-10641465-images-thumbs&n=13",
+        "street":"Перес. Чынгыза Айтматова",
+        "price":"200сом",
+        "feedback":"8.1/10"
+    },
+    {
+        "id": 8,
+        "title": "Филармония",
+        "city": "Бишкек",
+        "img":"https://avatars.mds.yandex.net/i?id=a30ab552166daf07d843a298a59e8447ee240322-10146555-images-thumbs&n=13",
+        "street":"Улица Киевская, перес. Чынгыза Айтматова",
+        "price":"800сом",
+        "feedback":"9.1/10"
+    },
+    {
+        "id": 9,
+        "title": "Площадь",
+        "city": "Бишкек",
+        "img":"https://avatars.mds.yandex.net/i?id=f397243036139f99adf886d814927143e8606e6d-12373000-images-thumbs&n=13",
+        "street":"Улица Чуя",
+        "price":"200сом",
+        "feedback":"8.1/10"
+    },
+    {
+        "id": 10,
+        "title": "Вечный Огонь",
+        "city": "Бишкек",
+        "img":"https://avatars.mds.yandex.net/i?id=c858e4e1b73b975fc40a7aba1a05331b82ec2702-12650537-images-thumbs&n=13",
+        "street":"Улица Фрунзе",
+        "price":"300сом",
+        "feedback":"8.5/10"
+    },
+    {
+        "id": 11,
+        "title": "Музей петроглифов",
+        "city": "Иссык-Куль",
+        "img":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/8a/9c/43/caption.jpg?w=500&h=-1&s=1",
+        "street":"Улица Манаса",
+        "price":"700сом",
+        "feedback":"7.9/10"
+    },
+    {
+        "id": 12,
+        "title": "Свято-Троицкая Церковь",
+        "city": "Каракол",
+        "img":"https://avatars.mds.yandex.net/i?id=6b99368efbaee6a5aa5bc9829053599e3d6bd86e-9863167-images-thumbs&n=13",
+        "street":"Улица Гагарина",
+        "price":"500сом",
+        "feedback":"9.8/10"
+    },
+    {
+        "id": 13,
+        "title": "Центральная Мечеть",
+        "city": "Бишкек",
+        "img":"https://avatars.mds.yandex.net/i?id=05db8d0a2b687bc397d43d8a217d48b94b30858f-11908484-images-thumbs&n=13",
+        "street":"Проспект Жибек-Жолу",
+        "price":"400сом",
+        "feedback":"10/10"
+    },
+    {
+        "id": 14,
+        "title": "Караван Сарай Таш-Рабат",
+        "city": "Нарын",
+        "img":"https://yobte.ru/uploads/posts/2023-05/kirgizija-priroda-dostoprimechatelnosti-94-foto-75.webp",
+        "street":"нарын",
+        "price":"900сом",
+        "feedback":"9.7/10"
+    },
+    {
+        "id": 15,
+        "title": "Цирк",
+        "city": "Бишкек",
+        "img":"https://avatars.mds.yandex.net/i?id=6b8dd566477b9a88987addd029d23b4d826af7c9-5233584-images-thumbs&n=13",
+        "street":"Улица Фрунзе",
+        "price":"700сом",
+        "feedback":"8.5/10"
+    },
+    {
+        "id": 16,
+        "title": "Музей Курманжан-датки",
+        "city": "Ош",
+        "img":"https://triptokyrgyzstan.com/sites/default/files/media/image/d41d39dacd351b5a280681ff9d0a59c6_0.jpg",
+        "street":"с. Гульча",
+        "price":"600сом",
+        "feedback":"9.5/10"
+    },
+    {
+        "id": 17,
+        "title": "Музей Айтиева",
+        "city": "Бишкек",
+        "img":"https://avatars.mds.yandex.net/i?id=dbab305e1cee5052f688ff05255d33a7-5086932-images-thumbs&n=13",
+        "street":"Улица Абдырахманова",
+        "price":"500сом",
+        "feedback":"8.8/10"
+    },
+    {
+        "id": 18,
+        "title": "Музей Фрунзе",
+        "city": "Бишкек",
+        "img":"https://avatars.mds.yandex.net/i?id=41e23fabadef02bdb86f8b280b5b16201cafde56-8253063-images-thumbs&n=13",
+        "street":"Улица Фрунзе",
+        "price":"500сом",
+        "feedback":"8.9/10"
+    },
+    {
+        "id": 19,
+        "title": "Дубовый Парк",
+        "city": "Бишкек",
+        "img":"https://avatars.mds.yandex.net/i?id=9a1d71ffe528ada15bfeb6f4500dbadbf5d16b15-12537594-images-thumbs&n=13",
+        "street":"Улица Абдумомунова 205",
+        "price":"600сом",
+        "feedback":"9.6/10"
+    },
+    {
+        "id": 20,
+        "title": "Ботанический Сад",
+        "city": "Бишкек",
+        "img":"https://tripplanet.ru/wp-content/uploads/asia/kyrgyzstan/bishkek/botanical-garden.jpg",
+        "street":"Улица Минжилкиева",
+        "price":"1000сом",
+        "feedback":"9.9/10"
+    },
+]

@@ -103,7 +103,7 @@ function Home() {
     <div className="Home">
       <section>
 
-      <Carousel data-bs-theme="dark" style={{marginTop: '200px'}}>
+      <Carousel data-bs-theme="dark" style={{marginTop: '100px'}}>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -123,9 +123,9 @@ function Home() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3 style={{color: 'rgb(130, 18, 13)'}}>Через 2 дня начнутся долгожданные игры кочевников!</h3>
-          <p style={{color: 'white'}}>Забронируй для себя и для своего близкого тур в ущелье Григорьева, чтобы посмотреть игры кочевников.</p>
-          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '10px'}}>Бронируй!</button>
+          <h2 style={{color: 'rgb(130, 18, 13)'}}>Через 2 дня начнутся долгожданные игры кочевников!</h2>
+          <p style={{color: 'white', fontSize:"30px"}}>Забронируй для себя и для своего близкого тур в ущелье Григорьева, чтобы посмотреть игры кочевников.</p>
+          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '15px', color:"white"}}>Бронируй!</button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -136,10 +136,10 @@ function Home() {
         />
         <Carousel.Caption>
           <h4 style={{color: 'white'}}>Прокатитесь на лошадях в Семёновском ущелье с семьей!</h4>
-          <p style={{color: 'white'}}>
+          <p style={{color: 'white', fontSize:"30px"}}>
             Действует акция специально для людей с семьей. <br />Успей забронировать первым!
           </p>
-          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '10px'}}>Бронируй!</button>
+          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '15px'}}>Бронируй!</button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
@@ -329,7 +329,7 @@ function Home() {
               <img src={img3} alt="" className="image" />
                 <div class="middle">
                   <h4 className="title1">Чатыр-Куль</h4>
-                  <p className="text">Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. Находясь высоко в горах, озеро оправдывает свое название – «небесное озеро».</p>
+                  <p className="text2">Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. Находясь высоко в горах, озеро оправдывает свое название – «небесное озеро».</p>
                   <Button variant="primary" style={{backgroundColor:"rgb(30, 30, 131"}}>Подробнее</Button>
                 </div>
             </div>
@@ -337,7 +337,7 @@ function Home() {
               <img src={img2} alt="" className="image" />
                 <div class="middle">
                 <h4 className="title1">Предгорье Ала-Тоо</h4>
-                  <p className="text">Кыргызстан славится маковыми полями, в том <br /> числе расположенными совсем рядом со столицей. <br /> Обычно маки расцветают в мае. Земли в предгорьях Ала-Тоо окрашиваются в ярко-красный цвет.</p>
+                  <p className="text2">Кыргызстан славится маковыми полями, в том числе расположенными совсем рядом со столицей.Обычно маки расцветают в мае. Земли в предгорьях Ала-Тоо окрашиваются в ярко-красный цвет.</p>
                   <Button variant="primary" style={{backgroundColor:"rgb(30, 30, 131"}}>Подробнее</Button>
                 </div>
             </div>
@@ -345,7 +345,7 @@ function Home() {
               <img src={img1} alt="" className="image" />
                 <div class="middle">
                 <h4 className="title1">Башня "Бурана"</h4>
-                  <p className="text">Башня Бурана находится в 10 км к югу от Токмака. <br /> Считается, что башня являлась частью минарета, <br />и прежде была выше, чем в настоящее время... </p>
+                  <p className="text2">Башня Бурана находится в 10 км к югу от Токмака.  Считается, что башня являлась частью минарета, и прежде была выше, чем в настоящее время... </p>
                   <Button variant="primary" style={{backgroundColor:"rgb(30, 30, 131"}}>Подробнее</Button>
                 </div>
             </div>
@@ -359,26 +359,26 @@ function Home() {
         <Toast>
       <Toast.Header>
         <img src={ava} className="svg" alt="" />
-        <strong className="me-auto">Emily Johns</strong>
-        <small>11 mins ago</small>
+        <strong className="list-title">Emily Johns</strong>
+        <small className='text'>11 mins ago</small>
       </Toast.Header>
-      <Toast.Body>Мне очень понравилось озеро Сон-Куль, отправилась туда на 2 дня и это было просто незабываемо. Хорошие отели и хороший гид.</Toast.Body>
+      <Toast.Body className='text2'>Мне очень понравилось озеро Сон-Куль, отправилась туда на 2 дня и это было просто незабываемо. Хорошие отели и хороший гид.</Toast.Body>
     </Toast>
     <Toast>
       <Toast.Header>
         <img src={ava2} className="svg" alt="" />
-        <strong className="me-auto">Анна Ким</strong>
-        <small>2 days ago</small>
+        <strong className="list-title">Анна Ким</strong>
+        <small className='text'> 2 days ago</small>
       </Toast.Header>
-      <Toast.Body>Поехали с мамой в Каракол и хочу сказать, что здесь очень красиво и весело. Отель 9/10, Обслуживание 10/10 цена соответствует.</Toast.Body>
+      <Toast.Body className='text2'>Поехали с мамой в Каракол и хочу сказать, что здесь очень красиво и весело. Отель 9/10, Обслуживание 10/10 цена соответствует.</Toast.Body>
     </Toast>
     <Toast>
       <Toast.Header>
         <img src={ava3} className="svg" alt="" />
-        <strong className="me-auto">Abu Khalih</strong>
-        <small>1 week ago</small>
+        <strong className="list-title">Abu Khalih</strong>
+        <small className='text'>1 week ago</small>
       </Toast.Header>
-      <Toast.Body>It was amazing! The forest "Arslanbab" is very adorable and beautiful. I never will forget this place!</Toast.Body>
+      <Toast.Body className='text2'>It was amazing! The forest "Arslanbab" is very adorable and beautiful. I never will forget this place!</Toast.Body>
     </Toast>
         </div>
       </div>
@@ -393,7 +393,7 @@ function Home() {
             </div>
             <div className="right-text">
               <div className="list-title">Поддержка</div>
-               Ответим на ваши вопросы по телефону, e-mail и в мессенджерах 
+               <p className="text2">Ответим на ваши вопросы по телефону, e-mail и в мессенджерах </p>
             </div>
           </div>
           <div className="flex">
@@ -402,7 +402,7 @@ function Home() {
             </div>
             <div className="right-text">
               <div className="list-title">Выгодные цены </div>
-               Бронирование любых тур. услуг по выгодным ценам 
+               <p className="text2">Бронирование любых тур. услуг по выгодным ценам </p>
             </div>
           </div>
           <div className="flex">
@@ -411,7 +411,7 @@ function Home() {
             </div>
             <div className="right-text">
               <div className="list-title">Качество и надежность</div>
-               За 25 лет нашей работы мы отправили на отдых более 2 млн. туристов
+               <p className="text2">За 25 лет нашей работы мы отправили на отдых более 2 млн. туристов</p>
             </div>
           </div>
           <div className="flex">
@@ -420,7 +420,7 @@ function Home() {
             </div>
             <div className="right-text">
               <div className="list-title">Хорошие отели по всему Кыргызстану</div>
-               Более 10 000 отелей по всему Кыргызстану. В любой сезон вы найдете то, что подходит именно вам 
+               <p className="text2">Более 10 000 отелей по всему Кыргызстану. В любой сезон вы найдете то, что подходит именно вам </p>
             </div>
           </div>
           <div className="flex">
@@ -429,7 +429,7 @@ function Home() {
             </div>
             <div className="right-text">
               <div className="list-title">Гибкая оплата</div>
-                Вы сами выбираете подходящий способ оплаты из множества вариантов, включая бесплатную рассрочку и кредит 
+                <p className="text2">Вы сами выбираете подходящий способ оплаты из множества вариантов, включая бесплатную рассрочку и кредит </p>
             </div>
           </div>
           <div className="flex">
@@ -438,8 +438,7 @@ function Home() {
             </div>
             <div className="right-text">
               <div className="list-title">Гибкий поиск и умные фильтры</div>
-               Возможность подобрать отдых максимально отвечающий вашим предпочтениям 
-
+               <p className="text2">Возможность подобрать отдых максимально отвечающий вашим предпочтениям </p>
             </div>
           </div>
         </div>
