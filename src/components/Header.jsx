@@ -37,7 +37,7 @@ function Header() {
                 Экскурсии
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to='turs'>
+            <Nav.Link as={Link} to='/Turs'>
               Горящие туры
             </Nav.Link>
           </Nav>
