@@ -1,17 +1,17 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import culture from '../../components/assets/Kyrgyz-woman.jpg'
-import jigit from '../../components/assets/jigit.jpeg';
-import mountains from '../../components/assets/mountins.jpeg'
-import { Link } from 'react-router-dom'
+// import culture from '../../components/assets/Kyrgyz-woman.jpg';
+// import jigit from '../../components/assets/jigit.jpeg';
+// import mountains from '../../components/assets/mountins.jpeg';
+import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import karakol from '../../components/assets/karakol.jpg';
-import sonkol from '../../components/assets/son-kol.jpg';
-import suleimanToo from '../../components/assets/suleiman-too.jpg';
-import arslanbob from '../../components/assets/arslanbob.jpg'
-import '../Home/Home.css'
-// import s from '../components/styles/stylemodule.css'
+// import karakol from '../../components/assets/karakol.jpg';
+// import sonkol from '../../components/assets/son-kol.jpg';
+// import suleimanToo from '../../components/assets/suleiman-too.jpg';
+// import arslanbob from '../../components/assets/arslanbob.jpg';
+import '../Home/Home.css';
+import '../../components/styles/styles.moduls.css'
 
 
 function Home() {
@@ -21,11 +21,7 @@ function Home() {
 
       <Carousel data-bs-theme="dark" style={{marginTop: '200px'}}>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={culture}
-          alt="First slide"
-        />
+        {/* <img className="d-block w-100" src={culture} alt="First slide"/> */}
         <Carousel.Caption>
           <h4 style={{color: 'white'}}>Кыргызстан-место, где встретят тебя как семью...</h4>
           <p style={{color: 'white'}}>Уже сегодня тур в прекрасные горы Чункурчак, обязательно забронируй и насладись природой!</p>
@@ -33,11 +29,7 @@ function Home() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={jigit}
-          alt="Second slide"
-        />
+        {/* <img className="d-block w-100" src={jigit} alt="Second slide"/> */}
         <Carousel.Caption>
           <h3 style={{color: 'rgb(130, 18, 13)'}}>Через 2 дня начнутся долгожданные игры кочевников!</h3>
           <p style={{color: 'white'}}>Забронируй для себя и для своего близкого тур в ущелье Григорьева, чтобы посмотреть игры кочевников.</p>
@@ -45,11 +37,7 @@ function Home() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={mountains}
-          alt="Third slide"
-        />
+        {/* <img className="d-block w-100" src={mountains} alt="Third slide"/> */}
         <Carousel.Caption>
           <h4 style={{color: 'white'}}>Прокатитесь на лошадях в Семьенвском ущелье с семьей!</h4>
           <p style={{color: 'white'}}>
@@ -67,7 +55,7 @@ function Home() {
       <h1 className="title">Идеи для отдыха</h1>
       <div className="flex-card" style={{display: 'flex', justifyContent: "space-around", gap: "10px"}}>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={arslanbob} />
+      {/* <Card.Img variant="top" src={arslanbob} /> */}
       <Card.Body>
         <Card.Title>Ореховый лес "Арсланбаб"</Card.Title>
         <Card.Text className='text'>
@@ -77,7 +65,7 @@ function Home() {
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={suleimanToo} />
+      {/* <Card.Img variant="top" src={suleimanToo} /> */}
       <Card.Body>
         <Card.Title>Гора "Сулейман-Тоо"</Card.Title>
         <Card.Text>
@@ -88,7 +76,7 @@ function Home() {
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={sonkol} />
+      {/* <Card.Img variant="top" src={sonkol} /> */}
       <Card.Body>
         <Card.Title>Озеро "Сон-куль"</Card.Title>
         <Card.Text>
@@ -99,7 +87,7 @@ function Home() {
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={karakol} />
+      {/* <Card.Img variant="top" src={karakol} /> */}
       <Card.Body>
         <Card.Title>Горнолыжная База "Каракол"</Card.Title>
         <Card.Text>
