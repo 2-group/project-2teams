@@ -1,4 +1,6 @@
 *{
+  margin: 0;
+  box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .title{
@@ -29,7 +31,7 @@
     opacity: 1;
   }
   .container{
-    margin-top: 2rem;
+    margin-top: 7rem;
   }
   .middle {
     transition: .5s ease;
@@ -215,7 +217,7 @@ body {
 }
 
 .card-front__heading {
-  font-size: 1.5rem;
+  font-size: 2rem;
   
 }
 
@@ -250,12 +252,13 @@ body {
 
 /* For pricing text on card front cover */
 .card-front__text-price {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   margin-top: -.2rem;
 }
 
 
 .inside-page__text {
+ 
   color: #333;
 }
 .card-front__icon {
@@ -377,10 +380,10 @@ body {
 .card {
   background-color: rgba(0,0,0, .05);
   box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
-  height: 15rem;
-  position: relative;
+  height: 30rem;
+  
   transition: all 1s ease;
-  width: 15rem;
+  width: 24rem;
 }
 
 /* Flip card - covering both the front and inside front page */

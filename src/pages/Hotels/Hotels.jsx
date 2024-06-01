@@ -63,7 +63,7 @@ function Hotels(){
             {hotels.filter((item) => {
                 return search.toLowerCase() === ' '
                   ? item
-                  : item.name.toLowerCase().includes(search), item.price.toLowerCase().includes(search), item.feedback.toLowerCase().includes(search);
+                  : item.name.toLowerCase().includes(search);
               }).map((item, index) => (
                 <Card key={index} style={{ width: '24rem' }}>
         <Card.Img variant="top" src={item.img} alt="" />

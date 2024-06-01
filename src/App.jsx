@@ -4,11 +4,11 @@ import Header from './components/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About/About'
 import Turs from './pages/Turs';
-import Contacts from './pages/Contacts';
+import Contacts from './pages/Contacts/Contacts.jsx';
 import Home from './pages/Home/Home'
 import Hotels from './pages/Hotels/Hotels';
 import Excursion from './pages/Excursion/Excursion.jsx'
-
+import SearchList from './components/Search/SearchList.jsx'
 
 function App() {
 
@@ -24,6 +24,7 @@ function App() {
         <Route path='/contacts' element={<Contacts/>}/>
         <Route path='/hotels' element={<Hotels/>}/>
         <Route path='/excursion' element={<Excursion/>}/>
+        <Route path='/search' element={<SearchList/>}/>
       </Routes>
     </BrowserRouter>
     

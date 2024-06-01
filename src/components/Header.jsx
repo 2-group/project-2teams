@@ -44,18 +44,7 @@ function Header() {
 
 
 
-          <Link style={{textDecoration: "none"}} to='search'>
-          <Form  className="d-flex">
-            <Form.Control style={{fontSize:"18px"}}
-              type="search"
-              placeholder="Куда хотите отправиться?"
-              className="me-1"
-              aria-label="Search"
-              
-            />
-            
-            <Button style={{fontSize:"18px"}} variant="outline-success">Поиск</Button>
-          </Form></Link>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>

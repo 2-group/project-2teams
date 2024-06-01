@@ -38,7 +38,7 @@ function Excursion(){
             {excursions.filter((item) => {
                 return search.toLowerCase() === ' '
                   ? item
-                  : item.title.toLowerCase().includes(search), item.price.toLowerCase().includes(search), item.feedback.toLowerCase().includes(search), item.street.toLowerCase().includes(search);
+                  : item.title.toLowerCase().includes(search);
               }).map((item, index) => (
                 <Card key={index} style={{ width: '24rem' }}>
         <Card.Img variant="top" src={item.img} alt="" />

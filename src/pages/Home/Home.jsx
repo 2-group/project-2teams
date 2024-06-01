@@ -9,10 +9,6 @@ import karakol from '../../components/assets/karakol.jpg';
 import suleimanToo from '../../components/assets/suleiman-too.jpg';
 import ik from '../../components/assets/ik.jpg'
 import arslanbob from '../../components/assets/arslanbob.jpg'
-import svg1 from '../../components/assets/tea.svg';
-import svg2 from '../../components/assets/building.svg';
-import svg3 from '../../components/assets/bus.svg';
-import svg4 from '../../components/assets/shorts.svg'
 import img1 from '../../components/assets/img1.jpg'
 import img2 from '../../components/assets/img2.jpg'
 import img3 from '../../components/assets/10.jpg'
@@ -102,7 +98,7 @@ function Home() {
   return (
     <div className="Home">
       <section>
-
+        
       <Carousel data-bs-theme="dark" style={{marginTop: '100px'}}>
       <Carousel.Item>
         <img
@@ -111,9 +107,9 @@ function Home() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h4 style={{color: 'white'}}>Кыргызстан-место, где встретят тебя как семью...</h4>
-          <p style={{color: 'white', fontSize:"30px"}}>Уже сегодня тур в прекрасные горы Чункурчак, обязательно забронируй и насладись природой!</p>
-          <Link as={Link} to='/turs' style={{backgroundColor: 'rgb(51, 51, 190)', textDecoration:"none", borderRadius: '10px', padding: '15px', color: "white"}}>Бронируй!</Link>
+          <h1 style={{color: 'white', fontSize:"40px"}}>Кыргызстан-место, где встретят тебя как семью...</h1>
+          <p style={{color: 'white', fontSize:"25px"}}>Уже сегодня тур в прекрасные горы Чункурчак, обязательно забронируй и насладись природой!</p>
+          <Link as={Link} to='/turs' style={{backgroundColor: 'rgb(51, 51, 190)', textDecoration:"none", borderRadius: '10px', padding: '15px', color: "white", fontSize:"20px"}}>Бронируй!</Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -123,9 +119,9 @@ function Home() {
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h2 style={{color: 'rgb(130, 18, 13)'}}>Через 2 дня начнутся долгожданные игры кочевников!</h2>
+          <h1 style={{color: 'rgb(130, 18, 13)', fontSize:"40px"}}>Через 2 дня начнутся долгожданные игры кочевников!</h1>
           <p style={{color: 'white', fontSize:"30px"}}>Забронируй для себя и для своего близкого тур в ущелье Григорьева, чтобы посмотреть игры кочевников.</p>
-          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '15px', color:"white"}}>Бронируй!</button>
+          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '15px', color:"white", fontSize:"20px"}}>Бронируй!</button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -135,11 +131,11 @@ function Home() {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h4 style={{color: 'white'}}>Прокатитесь на лошадях в Семёновском ущелье с семьей!</h4>
+          <h1 style={{color: 'white', fontSize:"40px"}}>Прокатитесь на лошадях в Семёновском ущелье с семьей!</h1>
           <p style={{color: 'white', fontSize:"30px"}}>
             Действует акция специально для людей с семьей. <br />Успей забронировать первым!
           </p>
-          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '15px'}}>Бронируй!</button>
+          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '15px', fontSize:"20px"}}>Бронируй!</button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
@@ -271,7 +267,7 @@ function Home() {
                 <p class="inside-page__text">
                    Ура лето! Время для отдыха на кайфовом пляже Иссык-Куля.
                 </p>
-                <a href="#" class="inside-page__btn inside-page__btn--beach">Посмотри меня</a>
+                <Link to="turs"><a href="#" class="inside-page__btn inside-page__btn--beach"> Подробнее</a></Link>
             </div>
         </div>
     </div>
@@ -312,7 +308,7 @@ function Home() {
                 <p class="inside-page__text">
                    Чудесный, древний и ореховый лес- Арсланбоб!
                 </p>
-                <a href="#" class="inside-page__btn inside-page__btn--camping">Посмотри меня</a>
+                <a href="#" class="inside-page__btn inside-page__btn--camping">Подробнее </a>
             </div>
         </div>
     </div>
@@ -448,15 +444,18 @@ function Home() {
       <div className="container">
         <div className="container-info">
           <h1 className="title">Вы готовы отправиться?</h1>
+          <Link to="search" style={{textDecoration:"none"}}>
           <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Куда хотите отправиться?"
               className="me-1"
               aria-label="Search"
+              style={{fontSize:"20px"}}
             />
             <Button variant="outline-success" style={{backgroundColor: 'rgb(30, 30, 150)'}}>Отправиться!</Button>
           </Form>
+          </Link>
           <br />
           <br />
           <h3 className="title1">Желаем вам незабываемой поездки от нашей команды!</h3>
