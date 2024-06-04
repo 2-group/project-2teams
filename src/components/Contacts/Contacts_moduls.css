@@ -1,0 +1,133 @@
+
+
+.isanova{
+    display: flex;
+    margin-top: 50px;
+    font-size: 20px ;
+    justify-content: space-between;
+}
+
+.gde{
+    justify-content: center;
+    width: 300px;
+}
+
+.insta{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.li_items-container{
+    margin-top: 50px;
+    font-size: 11px;
+}
+.number-contacts{
+    margin-top: 70px;
+}
+
+.cont{
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.nash{
+    font-size: 20px;
+}
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg_color-1 {
+    width: 100%; 
+    height: 519px;
+    background-color: gray;
+}
+
+.li_items-container {
+    position: absolute;
+    left: 3.30%;
+    bottom: 28%;
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.About-us {
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    position: absolute;
+    left: 10%;
+    bottom: 60%;
+    font-size: 20px;
+    display: flex;
+    gap: 190px;
+}
+
+.contacts-item_container {
+    list-style-type: none;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 36.70%;
+    bottom: 52.56%;
+    display: inline-block;
+}
+
+.inst {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    right: 73.90%;
+}
+
+.teleg {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    right: 40.90%;
+}
+
+.vk {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 67%;
+}
+
+.number-contacts {
+    position: absolute;
+    top: 440%;
+}
+
+.location {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 150px;
+    left: 58.50%;
+}
+
+.loc-text {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 311px;
+    left: 63.50%;
+}
+
+.locImg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 53%;
+    left: 60.50%;
+    border-radius: 10px;
+} */
