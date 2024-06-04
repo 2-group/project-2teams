@@ -6,15 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../components/assets/logo.jpg'
 import { Link } from 'react-router-dom'
-import '../components/Search/SearchList';
-import React from 'react';
-import search2 from '../components/assets/search2.png'
-import telephone1 from '../components/assets/telephone1.png'
-import question from '../components/assets/question.png'
-import '../components/styles/Header.css'
-import SearchList from '../components/Search/SearchList'
-import telegram from '../components/assets/telegram.png'
-import contacts from '../pages/Contacts.jsx'
 
 
 function Header() {
@@ -47,12 +38,11 @@ function Header() {
   return (
 
     
-
-    <Navbar style={{ position: 'fixed', top: "0px", zIndex: "20", borderRadius: '70px', fontSize: '20px', width: "100%", height: "150px" }} expand="lg" className="bg-body-tertiary">
+    <Navbar style={{position:'fixed', top: "0px", zIndex: "20", backdropFilter: 'blur(200px)', borderRadius: '70px', fontSize:'20px',  width: "100%", height: "150px"}} expand="lg" className="bg-body-tertiary">
       <Container fluid >
         <Navbar.Brand as={Link} to='/'>
-          <img style={{ maxHeight: '100px', maxWidth: '100px', borderRadius: "50px" }} src={logo} alt="" />
-        </Navbar.Brand>
+          <img style={{maxHeight: '150px', maxWidth: '150px', borderRadius: "50px"}} src={logo} alt="" />
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse style={{ gap: '250px' }} id="navbarScroll">
           <Nav
@@ -62,13 +52,13 @@ function Header() {
           >
             <Nav.Link as={Link} to='about'>O нас</Nav.Link>
             <Nav.Link as={Link} to='contacts'>Контакты</Nav.Link>
-            <NavDropdown style={{ color: 'grey' }} title="Поездка" id="navbarScrollingDropdown">
-              <NavDropdown.Item style={{ fontSize: "20px" }} as={Link} to='https://beket.kg/?ysclid=lvj2qkk66w314817953'>Билеты</NavDropdown.Item>
-              <NavDropdown.Item style={{ fontSize: "20px" }} as={Link} to='hotels' href="hotels">
+            <NavDropdown style={{color:'grey'}} title="Поездка" id="navbarScrollingDropdown">
+              <NavDropdown.Item as={Link} to='https://beket.kg/?ysclid=lvj2qkk66w314817953'>Билеты</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='https://101hotels.com/kyrgyzstan/bishkek/best?ysclid=lvj2kqgz9i953328585' href="hotels">
                 Отели
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item style={{ fontSize: "20px" }} to='/excursion' as={Link}>
+              <NavDropdown.Item to='https://experience.tripster.ru/destinations/kyrgyzstan/' as={Link}>
                 Экскурсии
               </NavDropdown.Item>
             </NavDropdown>
@@ -77,36 +67,17 @@ function Header() {
             </Nav.Link>
           </Nav>
 
-          <div style={{ display: 'flex', marginRight: '150px' }} className="telephone_search">
-            
-            <div className="search" >{/*search-box*/}
-            <button>
-            <a href='/'>
-              <img  style={{  width: '45px', borderRadius: '50px', marginRight:'400' }} src={search2} alt="" />
-              </a>
-            </button>
-            </div>
-
-            <div className="telephone02">
-              <a title='whatsapp' href="tel:+996 709 966 808 ">
-                <img style={{ width: '45px', marginLeft: '10px' }} src={telephone1} alt="" />
-              </a>
-            </div>
-
-            {/* <div className="question01">
-              <a href="">
-                <img style={{ width: '45px', marginLeft: '10px' }} src={question} alt="" />
-              </a>
-            </div> */}
-
-            <div className="tg">
-              <a title='telegram' href="https://t.me/jusupaiz"><img style={{ width: '45px', marginLeft: '10px' }} src={telegram} alt="" /></a>
-            </div>
-
-          </div>
 
 
-
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Куда хотите отправиться?"
+              className="me-1"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Поиск</Button>
+          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
