@@ -3,8 +3,8 @@ import React from 'react';
 import Header from './components/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About/About'
-import Turs from './pages/Turs';
-import Contacts from './pages/Contacts';
+import Turs from './pages/Turs/Turs.jsx';
+import Contacts from './pages/Contacts/Contacts.jsx';
 import Home from './pages/Home/Home'
 import Hotels from './pages/Hotels/Hotels';
 import SearchList from './components/Search/SearchList.jsx';

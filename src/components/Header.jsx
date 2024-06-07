@@ -6,6 +6,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../components/assets/logo.jpg'
 import { Link } from 'react-router-dom'
+import '../components/Search/SearchList';
+import React from 'react';
+import telephone1 from '../components/assets/telephone1.png'
+import search2 from '../components/assets/search2.png'
+import telegram from '../components/assets/telegram.png'
 
 
 function Header() {
@@ -67,7 +72,30 @@ function Header() {
             </Nav.Link>
           </Nav>
 
+          <div style={{ display: 'flex', marginRight: '50px' }} className="telephone_search">
+            
+            <div className="search" >{/*search-box*/}
+            <button>
+            <Link to='/search'>
+              <img  style={{  width: '45px', borderRadius: '50px', marginRight:'400' }} src={search2} alt="" />
+              </Link>
+            </button>
+            </div>
 
+            <div className="telephone02">
+              <Link to='/Contacts'>
+                <a href=""><img style={{ width: '45px', marginLeft: '10px' }} src={telephone1} alt="" /></a>
+                </Link>
+            </div>
+
+            
+
+            <div className="tg">
+              <a title='telegram' href="https://t.me/jusupaiz">
+              <img style={{ width: '45px', marginLeft: '10px' }} src={telegram} alt="" /></a>
+            </div>
+
+          </div>
 
           <Form className="d-flex">
             <Form.Control
@@ -81,6 +109,8 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+
   );
 }
 

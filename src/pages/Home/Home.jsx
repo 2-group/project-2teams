@@ -135,7 +135,7 @@ function Home() {
           <p style={{color: 'white', fontSize:"30px"}}>
             Действует акция специально для людей с семьей. <br />Успей забронировать первым!
           </p>
-          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '15px', fontSize:"20px"}}>Бронируй!</button>
+          <button as={Link} to='turs' style={{backgroundColor: 'rgb(51, 51, 190)', borderRadius: '10px', padding: '15px', fontSize:"20px", color:"whi"}}>Бронируй!</button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
@@ -144,7 +144,7 @@ function Home() {
     <br />
     <br />
     
-    <section>
+
         <h1 className="title">Идеи для отдыха</h1>
           <section className="card-area">
             <section classNameName="card-section">
@@ -183,7 +183,7 @@ function Home() {
                 <p className="inside-page__text ">
                    Не пропусти тур в город Ош, а отправляемся мы в гору Сулейман Тоо
                 </p>
-                <a href="#" className="inside-page__btn inside-page__btn--city">Подробнее</a>
+                <Link to='/turs' href="#" className="inside-page__btn inside-page__btn--city">Подробнее</Link>
             </div>
         </div>
     </div>
@@ -315,7 +315,7 @@ function Home() {
 </section>
 
 </section>
-</section>
+
     
     <section>
         <div className="container">
