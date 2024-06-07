@@ -8,7 +8,9 @@ import logo from '../components/assets/logo.jpg'
 import { Link } from 'react-router-dom'
 import '../components/Search/SearchList';
 import React from 'react';
-
+import telegram from '../components/assets/telegram.jpg';
+import telephone1 from '../components/assets/telephone.png';
+import search from '../components/assets/search.jpg';
 
 function Header() {
   return (
@@ -42,12 +44,36 @@ function Header() {
             </Nav.Link>
           </Nav>
 
+          <div style={{ display: 'flex', marginRight: '50px' }} className="telephone_search">
+            
+            <div className="search" >{/*search-box*/}
+            <button>
+            <Link to='/search'>
+              <img  style={{  width: '45px', borderRadius: '50px', marginRight:'400' }} src={search} alt="" />
+              </Link>
+            </button>
+            </div>
 
+            <div className="telephone02">
+              <Link to='/contacts'>
+                <img style={{ width: '45px', marginLeft: '10px' }} src={telephone1} alt="" />
+                </Link>
+            </div>
+
+            
+
+            <div className="tg">
+              <a title='telegram' href="https://t.me/jusupaiz"><img style={{ width: '45px', marginLeft: '10px' }} src={telegram} alt="" /></a>
+            </div>
+
+          </div>
 
           
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+
   );
 }
 

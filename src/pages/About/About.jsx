@@ -86,7 +86,7 @@ function About() {
           <div className="container">
             
             <div className="button-flex">
-              <button className="btns">Контакты</button>
+              <Link to='/contacts'><button className="btns">Контакты</button></Link>
               <button className="btns">Благодарности</button>
               <button className="btns">Наши Награды</button>
               <button className="btns">Вакансии Компании</button>
@@ -142,9 +142,7 @@ function About() {
           </div>
         </section>
         <section>
-          <div className="container">
-            <button className="btns" href="../Home/Home.jsx">Назад</button>
-          </div>
+          
         </section>
         <footer>
       <section>
