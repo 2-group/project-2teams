@@ -1,0 +1,70 @@
+.containers {
+    margin-top: 200px;
+}
+
+
+#emails {
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: rgb(215, 242, 249);
+}
+
+#passwords {
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 10px;
+    background-color: rgb(215, 242, 249);
+}
+
+.forgots {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#btnns {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(215, 242, 249);
+    color: rgb(132, 132, 132);
+}
+
+#emaillss {
+    position: absolute;
+    top: 255px;
+    left: 870px;
+    width: 30px;
+    height: 30px;
+}
+
+#passwordds {
+    position: absolute;
+    top: 303px;
+    left: 870px;
+    width: 30px;
+    height: 30px;
+}
+
+.regs {
+    position: absolute;
+    top: 425px;
+    right: 720px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.helps {
+    position: absolute;
+    top: 425px;
+    right: 660px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.pass {
+    text-decoration: none;
+    color: black;
+}

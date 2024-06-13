@@ -9,6 +9,8 @@ import Home from './pages/Home/Home'
 import Hotels from './pages/Hotels/Hotels';
 import SearchList from './components/Search/SearchList.jsx';
 import Excursion from './components/Search/SearchList.jsx';
+import Registr from './pages/Registr/Registr.jsx';
+import Login from './pages/Login/Login.jsx';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
         <Route path='/hotels' element={<Hotels/>}/>
         <Route path='/excursion' element={<Excursion/>}/>
         <Route path='/search' element={<SearchList/>}/>
+        <Route path='/registr' element={<Registr/>}/>
+        <Route path='/login' element={<Login />} />
       </Routes>
     </BrowserRouter>
     
