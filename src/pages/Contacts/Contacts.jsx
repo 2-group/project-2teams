@@ -33,9 +33,9 @@ const Contacts = () => {
             <li style={{fontSize:'20px'}}>+996 709 966 808</li>
             </div>
             <div className="insta">
-            <a href="https://www.instagram.com/ra.shidovich?igsh=ZXJiY2c4ZzRpbmdl"><img style={{ width: '90px' }} title='открыть Instagram' className='inst' src={inst} alt="" /></a>
-            <a href="https://t.me/rashidovichhh"><img style={{ width: '90px' }} className='telegram' title='открыть Telegram' src={teleg} alt="" /></a>
-            <a href="https://vk.com/rashid0vich"><img style={{ width: '90px', borderRadius:'20px' }} title='открыть VK' className='vk' src={vk} alt="" /></a>
+            <a href="https://www.instagram.com/ra.shidovich?igsh=ZXJiY2c4ZzRpbmdl"><img style={{}} title='открыть Instagram' className='inst' src={inst} alt="" /></a>
+            <a href="https://t.me/rashidovichhh"><img style={{ }} className='telegram' title='открыть Telegram' src={teleg} alt="" /></a>
+            <a href="https://vk.com/rashid0vich"><img style={{ borderRadius:'20px' }} title='открыть VK' className='vk' src={vk} alt="" /></a>
             </div>
           </ul>
 

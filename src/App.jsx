@@ -10,8 +10,14 @@ import Hotels from './pages/Hotels/Hotels';
 import SearchList from './components/Search/SearchList.jsx';
 import Excursion from './components/Search/SearchList.jsx';
 
+import { CartProvider } from './pages/basket/CartContext.jsx';
+import Cart from './pages/basket/Cart.jsx';
+import Product from './pages/basket/Product.jsx';
+import Checkout from './pages/basket/Checkout.jsx';
+
 
 function App() {
+  const sampleProduct = { id: 1, name: 'Пример продукта', price: 10000 };
 
   return (
     <div className="App">
@@ -28,6 +34,15 @@ function App() {
         <Route path='/search' element={<SearchList/>}/>
       </Routes>
     </BrowserRouter>
+
+    <CartProvider>
+      <div>
+        <h1>Мой магазин</h1>
+        <Product product={sampleProduct} />
+        <Cart />
+        <Checkout />
+      </div>
+    </CartProvider>
     
     </div>        
   );
